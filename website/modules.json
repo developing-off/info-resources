@@ -228,7 +228,8 @@
           ]
         }
       ]
-    },{
+    },
+    {
     "name": "FSEA ORAN 1",
     "programs": [
       {
@@ -248,6 +249,53 @@
         ]
       }
     ]
-    }
+    },
+    {
+      "name": "USTO ORAN",
+      "programs": [
+        {
+          "name": "Licence 2ème année informatique",
+          "semesters": [
+            {
+              "semester": "Semestre 1",
+              "modules": [
+               
+                {
+                  "name": "Logique mathématique LM",
+                  "link": "https://drive.google.com/drive/folders/18InPvtYi2g0S_wInWT1J5z-SpVRQX4QM",
+                  "status": "approved"
+                },
+                {
+                  "name": "THG",
+                  "link": "https://drive.google.com/drive/folders/1thBzv4TI6iWOPIiY_2RCaE8QjBZo6efT",
+                  "status": "approved"
+                },
+                {
+                  "name": "SI",
+                  "link": "https://drive.google.com/drive/folders/1g6ePLo1-6_NF7qqG5WfQzGrpxaYKtKcZ",
+                  "status": "approved"
+                },
+                {
+                  "name": "MN",
+                  "link": "https://drive.google.com/drive/folders/1kLQ-Wsp_H222Q639X9b2B2bv23bpLklk",
+                  "status": "approved"
+                },
+                {
+                  "name": "ASD3",
+                  "link": "https://drive.google.com/drive/folders/1TvGR6zGTvkJBblatcIGa-zG4N2C6f9RJ",
+                  "status": "approved"
+                },
+                {
+                  "name": "AO",
+                  "link": "https://drive.google.com/drive/folders/1SFAkE6IwxCMS0l9886OG2mIuwM5xRUMK",
+                  "status": "approved"
+                }
+               
+              ]
+            }
+          ]
+        }
+      ]
+      }
   ]
 }
