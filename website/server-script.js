@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const queryString = new URLSearchParams(formData).toString();
   
       // URL du serveur PHP
-      const serverURL = `http://127.0.0.31/server/submit-form.php?${queryString}`;
+      const serverURL = `https://younes-sarni.alwaysdata.net/inforesources/server/submit-form.php?${queryString}`;
   
       // Effectuer la requête GET
       fetch(serverURL)
