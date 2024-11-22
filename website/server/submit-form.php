@@ -1,5 +1,8 @@
 <?php
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *'); // Permet toutes les origines, sinon spécifie une origine particulière
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE'); // Méthodes autorisées
+header('Access-Control-Allow-Headers: Content-Type'); // En-têtes autorisés
 
 // Vérifiez si tous les paramètres nécessaires sont présents
 if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['semester'], $_GET['module'])) {
