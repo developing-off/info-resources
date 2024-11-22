@@ -1,0 +1,24 @@
+{
+  "universities": [
+    {
+      "name": "INFO HUB",
+      "programs": [
+        {
+          "name": "Licence 1ère année informatique",
+          "semesters": [
+            {
+              "semester": "Semestre 1",
+              "modules": [
+                {
+                  "name": "Licence 1ère année informatique Module for Semestre 1",
+                  "link": "https://drive.google.com/drive/folders/1UfSYKy18jnb9w1tes5cRZ-zWIF1-NstO",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

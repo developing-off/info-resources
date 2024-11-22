@@ -1,0 +1,184 @@
+{
+    "Licence 1ère année informatique": {
+        "Semester 1": [
+            {
+                "name": "Analyse 1",
+                "link": "https://drive.google.com/drive/folders/1-7sOh8LJuJcUa2XOrixAvRrteTnaNMYe?usp=drive_link"
+            },
+            {
+                "name": "Algorithmique et Structures de données 1",
+                "link": "https://drive.google.com/drive/folders/1xqLqdRF6TAa51z31cNlKPa5kaUXX_kzT?usp=drive_link"
+            },
+            {
+                "name": "Algèbre 1",
+                "link": "https://drive.google.com/drive/folders/1-8mUAX142veDr2jg0H22I4AvC-05OpO6?usp=drive_link"
+            },
+            {
+                "name": "Structure machine 1",
+                "link": "https://drive.google.com/drive/folders/1-Px6qDXs5erJQb8TSAaQozCL-JwBrt0p?usp=drive_link"
+            },
+            {
+                "name": "Terminologie scientifique",
+                "link": "https://drive.google.com/drive/folders/1-An0sjYV6iXZtCykPz7cUR7F-05PSjT8?usp=drive_link"
+            },
+            {
+                "name": "Composants",
+                "link": "https://drive.google.com/drive/folders/1-PJFbI-h9e7NztIM7WVwVhD4BdtqBofk?usp=drive_link"
+            },
+            {
+                "name": "Anglais 1",
+                "link": "https://drive.google.com/drive/folders/1-I-o1JzewObsV9FbGSn6wtG1h5CxzpQA?usp=drive_link"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "Analyse 2",
+                "link": "https://drive.google.com/drive/folders/1Wq42CMJ9Y3lPyykibyKLio2H-0UJDu_6?usp=drive_link"
+            },
+            {
+                "name": "Algorithmique et Structures de données 2",
+                "link": "https://drive.google.com/drive/folders/1X00PsZEp_At9PVD19BW3G3BfQcWWTHEp?usp=drive_link"
+            },
+            {
+                "name": "Algèbre 2",
+                "link": "https://drive.google.com/drive/folders/1WuCDX4yJ-UrZCXAfUAuvLUxVEowpU1Ch?usp=drive_link"
+            },
+            {
+                "name": "Structure machine 2",
+                "link": "https://drive.google.com/drive/folders/1Wxl4Xnz6TEOpmL-hGOw_wB0WO6CqH8_V?usp=drive_link"
+            },
+            {
+                "name": "probabilité et statistique",
+                "link": "https://drive.google.com/drive/folders/1XFM9nvZO5UNlvvDBmJCzKdH3wkstGiTc?usp=drive_link"
+            },
+            {
+                "name": "Physique",
+                "link": "https://drive.google.com/drive/folders/1X6jQ3Alz8m3mNskgoNbBU9bzY9wcqUCg?usp=drive_link"
+            },
+            {
+                "name": "Outils de programmation pour les mathématiques",
+                "link": "https://drive.google.com/drive/folders/1Wusx9_Dc1UpftOyOqG-CZC0kUH5jJTi1?usp=drive_link"
+            },
+            {
+                "name": "Technologies de l'information et de la communication",
+                "link": "https://drive.google.com/drive/folders/1Wx8Gx9rdGGV1sUo-zmqvv5MJQXihscuN?usp=drive_link"
+            }
+        ]
+    },
+    "Licence 2ème année informatique": {
+        "Semester 1": [
+            {
+                "name": "Architecture des ordinateurs",
+                "link": "https://drive.google.com/drive/folders/106UnBjXLebtWT-rcfP4sRrQovNQbfWGo?usp=drive_link"
+            },
+            {
+                "name": "Algorithmique et Structures de données 3",
+                "link": "https://drive.google.com/drive/folders/1-pgEGV9vk4K7MsGxTlkvZDiWMFlezvql?usp=drive_link"
+            },
+            {
+                "name": "Systèmes d’informations",
+                "link": "https://drive.google.com/drive/folders/1SmI5vV9UuGUmkaG6oOhasbx6SwtknSnC?usp=sharing"
+            },
+            {
+                "name": "méthode numérique",
+                "link": "https://drive.google.com/drive/folders/100GT2mTA76v9FqQ3AzJ_S77UzXCix-GZ?usp=drive_link"
+            },
+            {
+                "name": "Logique mathématique",
+                "link": "https://drive.google.com/drive/folders/1RVvG1WMJl95zWYwODCij6xsp502YDQgK?usp=drive_link"
+            },
+            {
+                "name": "Théorie des Graphes",
+                "link": "https://drive.google.com/drive/folders/1b99vtKo1Obqr22qVBvOJM4q3WxDHkRp4?usp=sharing"
+            },
+            {
+                "name": "Anglais 2",
+                "link": "https://drive.google.com/drive/folders/10EEBIzmltaEYIP1dyUmDoGTFnW5qm0sI?usp=drive_link"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "Programmation Orienté Objet",
+                "link": "https://drive.google.com/drive/folders/1-RA3-tUW-l4vQmykTFheI9IFZglEcGiQ?usp=drive_link"
+            },
+            {
+                "name": "Développement web",
+                "link": "https://drive.google.com/drive/folders/1Sd1_Aowro9tpEutI2f0OiBUvVmrr3ia4?usp=drive_link"
+            },
+            {
+                "name": "Réseau",
+                "link": "https://drive.google.com/drive/folders/1-cYSGdObaw44kDdXnR8FJv5ku9uRb8EH?usp=drive_link"
+            },
+            {
+                "name": "Système d'exploitation 1",
+                "link": "https://drive.google.com/drive/folders/10feDIblbeiBPT53XzuYHG0rbhjAG03G3?usp=drive_link"
+            },
+            {
+                "name": "Théorie des Langages",
+                "link": "https://drive.google.com/drive/folders/1-_d0e9ErQwnKfa379KsTR0tvo852JkmG?usp=drive_link"
+            },
+            {
+                "name": "Base de Données",
+                "link": "https://drive.google.com/drive/folders/10iEVpCtJJXMR-bo0TNhzI11lXpfVf3MV?usp=drive_link"
+            },
+            {
+                "name": "Anglais 3",
+                "link": "https://drive.google.com/drive/folders/1-zrT5EB6VrTxNzyN9v4RkuTeW-kXbJ6d?usp=drive_link"
+            }
+        ]
+    },
+    "Licence 3ème année informatique": {
+        "Semester 1": [
+            {
+                "name": "Système d'exploitation 2",
+                "link": "https://drive.google.com/drive/folders/1Ggr1oMmIn8GAafSLrbzi-S_f4i8ia-Ss?usp=drive_link"
+            },
+            {
+                "name": "Compilation",
+                "link": "https://drive.google.com/drive/folders/1KQ2f0BHyi8UB9MUt4jNLnlkqtm7VRCSU?usp=drive_link"
+            },
+            {
+                "name": "Programmation linéaire",
+                "link": "https://drive.google.com/drive/folders/1UfSYKy18jnb9w1tes5cRZ-zWIF1-NstO?usp=drive_link"
+            },
+            {
+                "name": "Génie Logiciel",
+                "link": "https://drive.google.com/drive/folders/1O27TrHuMc-vzwklt-saa2Gf-Hkm3Zvs_?usp=drive_link"
+            },
+            {
+                "name": "Probabilité",
+                "link": "https://drive.google.com/drive/folders/1vj7-XDEUlxIiegj_HGBCajtX7FArScUi?usp=drive_link"
+            },
+            {
+                "name": "Interface Homme Machine",
+                "link": "https://drive.google.com/drive/folders/17arh0w6sEWHJjyzIrLG-UNI24Htx2D3s?usp=drive_link"
+            },
+            {
+                "name": "Economie Numérique",
+                "link": "https://drive.google.com/drive/folders/1eNvEtsufF5a6W4ee6SNO12GU5TbofGGA?usp=drive_link"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "IA",
+                "link": "https://drive.google.com/drive/folders/1WqEdWR7xpfs-69l9aN0duArsnBlcKJv5?usp=drive_link"
+            },
+            {
+                "name": "Données semi-structurées",
+                "link": "https://drive.google.com/drive/folders/15y-PY18h7WT40zGRkIm2758PzRsTLqvX?usp=drive_link"
+            },
+            {
+                "name": "Sécurite informatique",
+                "link": "https://drive.google.com/drive/folders/1gqiXjUJtBt4aKAy5I9HCxkeZINY5l5Ae?usp=drive_link"
+            },
+            {
+                "name": "Application Mobile",
+                "link": "https://drive.google.com/drive/folders/106gG63NHjxAavPqUd3yVzrjUtSMYsPlF?usp=drive_link"
+            },
+            {
+                "name": "Startup",
+                "link": "https://drive.google.com/drive/folders/1U9DNwH5hh_TZl4nX6VYt_hsPlc9S0pFs?usp=drive_link"
+            }
+        ]
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Université Informatique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Université Informatique</h1>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Programmes</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Explorez l'avenir de l'informatique</h2>
+      <p>
+        Rejoignez notre université et formez-vous aux technologies de demain
+      </p>
+      <a href="#">Rejoindre l'Université</a>
+    </section>
+    <!-- Courses Section -->
+    <section class="programs">
+      <h2>Programmes Universitaires</h2>
+      <div id="university-programs">
+        <!-- Conteneur pour afficher les universités et leurs programmes -->
+      </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaborate-section">
+      <h2>Collaborez avec vos camarades</h2>
+      <p>
+        Partagez vos ressources et vos liens avec vos collègues en sélectionnant
+        les bonnes informations.
+      </p>
+
+      <form class="collaborate-form" id="collaborate-form">
+        <label for="drive-link">Lien Google Drive :</label>
+      <input type="url" id="drive-link" name="drive-link" placeholder="Collez votre lien Google Drive" required>
+
+        <label for="university">Université :</label>
+        <select id="university" name="university" required>
+          <option value="INFO HUB">INFO HUB</option>
+          <option value="FSEA ORAN 1">FSEA ORAN 1</option>
+        </select>
+
+        <label for="program">Programme :</label>
+        <select id="program" name="program" required>
+          <option value="Licence 1ère année informatique">
+            Licence 1ère année informatique
+          </option>
+          <option value="Licence 2ème année informatique">
+            Licence 2ème année informatique
+          </option>
+          <option value="Licence 3ème année informatique">
+            Licence 3ème année informatique
+          </option>
+        </select>
+
+        <label for="semester">Semestre :</label>
+        <select id="semester" name="semester" required>
+          <option value="Semestre 1">Semestre 1</option>
+          <option value="Semestre 2">Semestre 2</option>
+        </select>
+
+        <button type="submit">Soumettre</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="https://github.com/ton-projet" target="_blank"
+          >Contribute on GitHub</a
+        >
+        <a href="mailto:feedback@universite.com">Give us your feedback</a>
+        <a href="#">Submit a document</a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/100" alt="Logo" />
+        <span>Université Informatique - Nom Prénom</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="server-script.js"></script>
+  </body>
+</html>

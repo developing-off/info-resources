@@ -1,0 +1,180 @@
+{
+    "Licence 1ère année informatique": {
+        "Semester 1": [
+            {
+                "name": "Foundational Mathematics",
+                "link": "https://drive.google.com/drive/u/1/folders/1WuUC8Hst0znW2rpqujNopvLVdnhDV0TO"
+            },
+            {
+                "name": "Data Structures And Algorithms",
+                "link": "https://drive.google.com/drive/u/1/folders/18yxudJoexOK713kW-N35L7S4WiEDQW-5"
+            },
+            {
+                "name": "Digital Systems",
+                "link": "https://drive.google.com/drive/u/1/folders/1FUr0NCCCr5LG3Y4EddYYM0T_jbUcX6WW"
+            },
+            {
+                "name": "Information Technology Essentials",
+                "link": "https://drive.google.com/drive/u/1/folders/17rIgnlM3VcwovIhuH0ipUKUwnT14CbLn"
+            },
+            {
+                "name": "Critical Thinking and Creative Problem Solving (CPSCT)",
+                "link": "https://drive.google.com/drive/folders/1XkijsOG_fqgwpDXsrx0x-stNtwhN-b5v"
+            },
+            {
+                "name": "English 1",
+                "link": "https://drive.google.com/drive/folders/1F9rep07kx5MrC3LT6y5lf-mE3og60TMI"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "Introduction to Linux",
+                "link": "https://drive.google.com/drive/u/1/folders/1QkDP_9KmMhDKqUY-MmegBJw697DlJbRY"
+            },
+            {
+                "name": "Linear Algebra",
+                "link": "https://drive.google.com/drive/folders/1Y-sOrF6FbLc1eZtyyxFUa9ckak6qICxk"
+            },
+            {
+                "name": "Introduction to Statistics",
+                "link": "https://drive.google.com/drive/folders/1rF_naxPrDvxN0W0yyH7QYvWLFTLil3Zm"
+            },
+            {
+                "name": "Object Oriented Programming",
+                "link": "https://drive.google.com/drive/folders/1tjeHDwav6Ltfbx0xb6O-79au1TUruX2F"
+            },
+            {
+                "name": "English 2",
+                "link": "https://drive.google.com/drive/folders/1ejqKTcwkUQgRt7R_Ygbi7HOCThhotz8a?usp=drive_link"
+            },
+            {
+                "name": "Mathematical Analysis 1",
+                "link": "https://drive.google.com/drive/folders/13TgNKEA2r0EkGLu9zMU-PGi3VvPn6hn7?usp=drive_link"
+            }
+        ]
+    },
+    "Licence 2ème année informatique": {
+        "Semester 1": [
+            {
+                "name": "Mathematical Analysis 2",
+                "link": "https://drive.google.com/drive/folders/1SJDDOcESHkZOff3A2Ff2hA1oGU1JdZ_n"
+            },
+            {
+                "name": "Mathematical Logic",
+                "link": "https://drive.google.com/drive/folders/182LOBx5TWx0K23k2sjd71z_-bS5k-xnz"
+            },
+            {
+                "name": "Data Structures and Algorithms 2",
+                "link": "https://drive.google.com/drive/folders/1D1RfgHDuVbhZiOXQKKpufO3uImSnBmpg"
+            },
+            {
+                "name": "Probability",
+                "link": "https://drive.google.com/drive/folders/1XEdr1YAZMrTfiidRytMhGllibOQ_a-Sk"
+            },
+            {
+                "name": "Web Development",
+                "link": "https://drive.google.com/drive/folders/1n_S0ZjotjfmCLvmykjUUkWA6n4jiDcI2"
+            },
+            {
+                "name": "Databases",
+                "link": "https://drive.google.com/drive/folders/1wce39ylDlcI-DVqDaHGmOwb9qkQ37OqU"
+            },
+            {
+                "name": "Introduction to Business",
+                "link": "https://drive.google.com/drive/folders/1OCSMwzvq3n4d_amDtZiws8MGY2B990hA"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "Introduction to AI",
+                "link": "https://drive.google.com/drive/folders/19HYOs5C7c1usd6YNAnLAbRCETodGNjHT"
+            },
+            {
+                "name": "Computer Architecture",
+                "link": "https://drive.google.com/drive/folders/1VImJaXOeadLiyIrKFDjnmQaSePqXFW6t?usp=drive_link"
+            },
+            {
+                "name": "Theory of Computing",
+                "link": "https://drive.google.com/drive/folders/19MVB0YL1CCeLQ0CF8Lk0jepMPT4Equ7J"
+            },
+            {
+                "name": "Operating Systems",
+                "link": "https://drive.google.com/drive/folders/1yXEQNd3n7qBrsLdRclHwzSZIINQ507N8"
+            },
+            {
+                "name": "Electronic Circuits Labs",
+                "link": "https://drive.google.com/drive/folders/1lO4LbejbO5UrTay15EzmT03KgVx_T_eT?usp=drive_link"
+            },
+            {
+                "name": "Mathematical Analysis 3",
+                "link": "https://drive.google.com/drive/folders/1icFTEa2aS05o83bB9uMVGWjZnRVGw0E9?usp=drive_link"
+            },
+            {
+                "name": "Statistical Inference",
+                "link": "https://drive.google.com/drive/folders/1X-FMjRp5_kAxTs28wBOpIPRjehYWcNZR?usp=drive_link"
+            }
+        ]
+    },
+    "Licence 3ème année informatique": {
+        "Semester 1": [
+            {
+                "name": "Data Mining",
+                "link": "https://drive.google.com/drive/u/1/folders/1ermEhuMFbDztXHQIEJGuSdcUUTA78IHy"
+            },
+            {
+                "name": "Operations Research",
+                "link": "https://drive.google.com/drive/folders/1F0D3RhUE4kGXl1_QjhnJHu-CI2FlU_MD?usp=drive_link"
+            },
+            {
+                "name": "Stochastic Modelling and Simulation",
+                "link": "https://drive.google.com/drive/u/1/folders/1c_1xJsJOrB_5HBxyRFcyYn60-RUjaO4V"
+            },
+            {
+                "name": "Software Engineering",
+                "link": "https://drive.google.com/drive/folders/1TZcrqOSgpLxO2dbLmBE9OhFEQIrJkAgH?usp=drive_link"
+            },
+            {
+                "name": "Networks and Protocols",
+                "link": "https://drive.google.com/drive/u/1/folders/1teZ9f0fn3YYxwRjciTKGjkb1uJHD7DDJ"
+            },
+            {
+                "name": "Mobile Development",
+                "link": "https://drive.google.com/drive/u/1/folders/1F-qWt8tL-LEOoh6w5lgd80ZYXpy4Og7G"
+            },
+            {
+                "name": "Entrepreneurship and Innovation",
+                "link": "https://drive.google.com/drive/u/1/folders/1rljxX73AZ1b6ghI5CFP5FrFUUKVFDwXE"
+            }
+        ],
+        "Semester 2": [
+            {
+                "name": "Machine Learning",
+                "link": "https://drive.google.com/drive/u/1/folders/1XM3jFU__zBs26AImWX6Udm4xwwyEHcMJ"
+            },
+            {
+                "name": "Numerical Methods and Optimisation",
+                "link": "https://drive.google.com/drive/u/1/folders/1kpspdxksivepW4GWFBbegmBKUMh4DXWQ"
+            },
+            {
+                "name": "Time Series Analysis and Classification",
+                "link": "https://drive.google.com/drive/u/1/folders/1PiIlvGdFRjFjTMUkDm7QmVs_1xVgf8JS"
+            },
+            {
+                "name": "Advanced Databases",
+                "link": "https://drive.google.com/drive/u/1/folders/1mogTbf_uGE3nNMlbVrXxrYHDLx97UQJg"
+            },
+            {
+                "name": "Computer and network Security",
+                "link": "https://drive.google.com/drive/u/1/folders/1pwnhcvR2tAPiPERM_jMAxUFGwbvzx8bk"
+            },
+            {
+                "name": "Group Project",
+                "link": "https://drive.google.com/drive/u/1/folders/1Imz3xyE6kbg3XoU7fRmacnyr-3Rs1LW4"
+            },
+            {
+                "name": "Project Management",
+                "link": "https://drive.google.com/drive/u/1/folders/1LR3N8VTF0RQGtgsl2Pa0UqeSBP6G6fL9"
+            }
+        ]
+    }
+}

@@ -1,0 +1,380 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  
+  header nav {
+    margin-top: 15px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #00aaff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #00aaff;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  .hero a {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero a:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Collaboration Section */
+  .collaborate-section {
+    background-color: #fff;
+    padding: 50px 15%;
+    text-align: center;
+  }
+  
+  .collaborate-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .collaborate-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .collaborate-form label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .collaborate-form input,
+  .collaborate-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .collaborate-form input:focus,
+  .collaborate-form select:focus {
+    border-color: #00aaff;
+  }
+  
+  .collaborate-form button {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .collaborate-form button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 50px 15%;
+    text-align: center;
+    position: relative;
+  }
+  
+  footer p {
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 1.1em;
+    padding: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-links a:hover {
+    color: #00aaff;
+  }
+  
+  footer .footer-logo {
+    margin-top: 40px;
+    font-size: 1.3em;
+    color: #00aaff;
+  }
+  
+  footer .footer-logo img {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .collaborate-form {
+      padding: 10px;
+      width: 90%;
+    }
+  
+    .collaborate-form label {
+      text-align: left;
+    }
+  }
+/* Section Nos Programmes */
+.programs {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+  .programs h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .universities {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .university {
+    background-color: #e9f7fb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  
+  .university h3 {
+    font-size: 2em;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+  }.year {
+    display: flex;               /* Afficher les semestres côte à côte */
+    justify-content: space-between;
+    gap: 20px;                   /* Espacement entre les semestres */
+    flex-wrap: wrap;             /* Permet de passer à la ligne suivante si besoin */
+    margin-bottom: 40px;
+  }
+  
+  .semester {
+    background-color: #c1e4f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;                  /* 48% de la largeur pour chaque semestre */
+    margin-bottom: 20px;
+    box-sizing: border-box;      /* Assurez-vous que le padding ne dépasse pas la largeur */
+  }
+  
+  .semester h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .module {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .module a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .module:hover {
+    background-color: #00aaff;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .programs {
+      padding: 30px 10%;
+    }
+  
+    .year {
+      flex-direction: column;  /* Sur mobile, les semestres passent en colonne */
+      gap: 20px;
+    }
+  
+    .semester {
+      width: 100%;              /* Sur petits écrans, chaque semestre prend 100% de la largeur */
+    }
+  }
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.programs {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+.university {
+    background-color: #e9f7fb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+  .year {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .semester {
+    background-color: #c1e4f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%; /* Prend 48% de la largeur, permettant ainsi d'afficher deux semestres côte à côte */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .semester h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .module {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .module a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .module:hover {
+    background-color: #00aaff;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .year {
+      flex-direction: column;
+    }
+  
+    .semester {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
