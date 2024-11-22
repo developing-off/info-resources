@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         university: document.getElementById("university").value,
         program: document.getElementById("program").value,
         semester: document.getElementById("semester").value,
-        module: document.getElementById("Module").value
+        module: document.getElementById("Module").value,
+        system: document.getElementById("Systeme").value,
       };
   
       // Construire la chaîne de requête GET

@@ -11,6 +11,7 @@ if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['seme
     $program = $_GET['program'];
     $semester = $_GET['semester'];
     $module = $_GET['module'];
+    $system = $_GET['system'];
 
     // Lire le fichier JSON existant, s'il existe
     $filePath = 'modules_data.json';
@@ -40,7 +41,7 @@ if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['seme
                             $semesterExists = true;
                             // Ajouter le module dans le semestre
                             $sem['modules'][] = [
-                                'name' => $module,
+                                'name' => $module . ' (' . $system . ')',
                                 'link' => $driveLink,
                                 'status' => 'approved'
                             ];
@@ -52,7 +53,7 @@ if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['seme
                             'semester' => $semester,
                             'modules' => [
                                 [
-                                    'name' => $module,
+                                    'name' => $module . ' (' . $system . ')',
                                     'link' => $driveLink,
                                     'status' => 'approved'
                                 ]
@@ -70,7 +71,7 @@ if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['seme
                             'semester' => $semester,
                             'modules' => [
                                 [
-                                    'name' => $module,
+                                    'name' => $module . ' (' . $system . ')',
                                     'link' => $driveLink,
                                     'status' => 'approved'
                                 ]
@@ -94,7 +95,7 @@ if (isset($_GET['driveLink'], $_GET['university'], $_GET['program'], $_GET['seme
                             'semester' => $semester,
                             'modules' => [
                                 [
-                                    'name' => $module,
+                                    'name' => $module . ' (' . $system . ')',
                                     'link' => $driveLink,
                                     'status' => 'approved'
                                 ]
