@@ -87,3 +87,37 @@ function generatePrograms(data) {
   // Ajouter l'ensemble du fragment au DOM
   container.appendChild(fragment);
 }
+
+const moduleData = [
+  { name: "Analyse 1" },
+  { name: "Algorithmique et Structures de données 1" },
+  { name: "Algèbre 1" },
+  { name: "Structure machine 1" },
+  { name: "Terminologie scientifique" },
+  { name: "Composants" },
+  { name: "Anglais 1" },
+  { name: "Analyse 2" },
+  { name: "Algorithmique et Structures de données 2" },
+  { name: "Algèbre 2" },
+  { name: "Structure machine 2" },
+  { name: "Probabilité et statistique" },
+  { name: "Physique" },
+  { name: "Outils de programmation pour les mathématiques" },
+  { name: "Technologies de l'information et de la communication" }
+];
+
+// Cibler l'élément select
+const selectElement = document.getElementById('Module');
+
+// Ajouter une option vide ou par défaut (si nécessaire)
+const defaultOption = document.createElement('option');
+defaultOption.text = 'Sélectionnez un module';
+selectElement.add(defaultOption);
+
+// Générer dynamiquement les options à partir du tableau
+moduleData.forEach(module => {
+  const option = document.createElement('option');
+  option.value = module.name;  // Utiliser le nom du module comme valeur
+  option.text = module.name;   // Afficher le nom du module comme texte
+  selectElement.add(option);
+});

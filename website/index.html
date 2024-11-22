@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informatique</title>
     <link rel="stylesheet" href="style.css" />
-  
+
     <link rel="icon" href="assets/images/logo2.jpg" />
- 
-    <meta property="og:image" content="https://th.bing.com/th/id/OIP.5CndTkd0-nqGwgaoMXgPxwHaCU?rs=1&pid=ImgDetMain" />
+
+    <meta
+      property="og:image"
+      content="https://th.bing.com/th/id/OIP.5CndTkd0-nqGwgaoMXgPxwHaCU?rs=1&pid=ImgDetMain"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -25,10 +28,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h2>Explorez l'avenir de l'informatique</h2>
-      <p>
-        Rejoignez Nous & formez-vous aux technologies de demain
-      </p>
-      
+      <p>Rejoignez Nous & formez-vous aux technologies de demain</p>
     </section>
     <!-- Courses Section -->
     <section class="programs">
@@ -40,7 +40,7 @@
 
     <!-- Collaboration Section -->
     <section class="collaborate-section">
-      <h1>error</h1>
+      <h1>Erreur</h1>
       <h2>Collaborez avec vos camarades</h2>
       <p>
         Partagez vos ressources et vos liens avec vos collègues en sélectionnant
@@ -49,7 +49,13 @@
 
       <form class="collaborate-form" id="collaborate-form">
         <label for="drive-link">Lien Google Drive :</label>
-      <input type="url" id="drive-link" name="drive-link" placeholder="Collez votre lien Google Drive" required>
+        <input
+          type="url"
+          id="drive-link"
+          name="drive-link"
+          placeholder="Collez votre lien Google Drive"
+          required
+        />
 
         <label for="university">Université :</label>
         <select id="university" name="university" required>
@@ -76,10 +82,49 @@
           <option value="Semestre 2">Semestre 2</option>
         </select>
 
+        <!-- Alignement Module et Système sur une seule ligne -->
+        <div class="module-system-group">
+          <div>
+            <label for="Module">Module :</label>
+            <select id="Module" name="Module" required>
+             
+            </select>
+          </div>
+          <div>
+            <label for="Systeme">Système :</label>
+            <select id="Systeme" name="Systeme" required>
+              <option value="LMD">LMD</option>
+              <option value="ING">ING</option>
+            </select>
+          </div>
+        </div>
+
         <button type="submit">Soumettre</button>
       </form>
     </section>
+    <style>
+      /* CSS pour aligner les champs "Module" et "Système" */
+      .module-system-group {
+        display: flex;
+        gap: 20px; /* Espace entre les deux champs */
+        margin-top: 10px; /* Marges supplémentaires */
+      }
 
+      .module-system-group div {
+        flex: 1; /* Les deux champs prennent la même largeur */
+      }
+
+      .module-system-group label {
+        display: block; /* Assure un alignement vertical du texte */
+        margin-bottom: 5px; /* Espace entre le label et le champ */
+      }
+
+      .module-system-group select {
+        width: 100%; /* Les champs prennent toute la largeur disponible */
+        padding: 5px; /* Ajoute un peu d'espace à l'intérieur */
+        font-size: 14px;
+      }
+    </style>
     <!-- Footer -->
     <footer>
       <div class="footer-links">
