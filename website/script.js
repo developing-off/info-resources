@@ -117,7 +117,7 @@ selectElement.add(defaultOption);
 // Générer dynamiquement les options à partir du tableau
 moduleData.forEach(module => {
   const option = document.createElement('option');
-  option.value = module.name;  // Utiliser le nom du module comme valeur
-  option.text = module.name;   // Afficher le nom du module comme texte
+  option.value = module.name;  
+  option.text = module.name;   
   selectElement.add(option);
 });
