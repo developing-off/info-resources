@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul des Moyennes - Licence 1</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header */
+      header {
+        background-color: #1c1c1c;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+      }
+
+      header nav {
+        margin-top: 15px;
+      }
+
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.1em;
+        padding: 8px;
+        transition: color 0.3s ease;
+      }
+
+      header nav a:hover {
+        color: #00aaff;
+      }
+      .hero {
+        position: relative;
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        color: #00aaff;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        color: #ddd;
+      }
+
+      .hero a {
+        background-color: #00aaff;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero a:hover {
+        background-color: #0088cc;
+      }
+
+      .programs {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .programs h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .university {
+        margin-bottom: 20px;
+      }
+
+      .university h3 {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+        border-radius: 4px;
+      }
+
+      .ue {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      .ue h4 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+        color: #555;
+      }
+
+      .module-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+      }
+
+      .module-row label {
+        width: 100px;
+        font-weight: bold;
+      }
+
+      .module-row input {
+        width: 60px;
+        padding: 5px;
+        font-size: 1em;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .result-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        text-align: center;
+      }
+      footer {
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 50px 15%;
+        text-align: center;
+        position: relative;
+      }
+
+      footer p {
+        font-size: 1em;
+        margin-top: 20px;
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      footer .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px 20px;
+        font-size: 1.1em;
+        padding: 8px;
+        transition: color 0.3s ease;
+      }
+
+      footer .footer-links a:hover {
+        color: #00aaff;
+      }
+
+      footer .footer-logo {
+        margin-top: 40px;
+        font-size: 1.3em;
+        color: #00aaff;
+      }
+
+      footer .footer-logo img {
+        width: 100px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .collaborate-form {
+          padding: 10px;
+          width: 90%;
+        }
+
+        .collaborate-form label {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Universités Informatique</h1>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#programme">Programmes</a>
+
+        <a href="https://t.me/Developing_off">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Explorez l'avenir de l'informatique</h2>
+      <p>Rejoignez Nous & formez-vous aux technologies de demain</p>
+    </section>
+    <div class="container my-5">
+      <h2>Licence 1ère Année - Calcul des Moyennes</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Coef</th>
+            <th>Crédits</th>
+            <th>Notes (TD, TP, Exam)</th>
+            <th>Moyenne Module</th>
+            <th>Crédits Attribués</th>
+          </tr>
+        </thead>
+        <tbody id="table-body-semester-1"></tbody>
+      </table>
+
+      <h2>Licence 1ère Année - Semestre 2</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Coef</th>
+            <th>Crédits</th>
+            <th>Notes (TD, TP, Exam)</th>
+            <th>Moyenne Module</th>
+            <th>Crédits Attribués</th>
+          </tr>
+        </thead>
+        <tbody id="table-body-semester-2"></tbody>
+      </table>
+      <h2 class="final-table">Résultats Finaux</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Semestre</th>
+            <th>Moyenne</th>
+            <th>Crédits</th>
+          </tr>
+        </thead>
+        <tbody id="final-results">
+          <tr>
+            <td>Semestre 1</td>
+            <td id="semester-1-moyenne">-</td>
+            <td id="semester-1-credits">-</td>
+          </tr>
+          <tr>
+            <td>Semestre 2</td>
+            <td id="semester-2-moyenne">-</td>
+            <td id="semester-2-credits">-</td>
+          </tr>
+          <tr>
+            <td><strong>Moyenne Générale</strong></td>
+            <td id="general-moyenne">-</td>
+            <td><strong>Total Crédits</strong></td>
+            <td id="total-credits">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="result"></div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a
+          href="https://github.com/developing-off/info-resources"
+          target="_blank"
+          >Contribute on GitHub</a
+        >
+        <a href="https://t.me/Developing_off">Give us your feedback</a>
+        <a href="#">Submit a document</a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="assets/images/logo.jpg" alt="Logo" />
+        <span> - Developing_OFF</span>
+      </div>
+    </footer>
+
+    <script>
+      const semester1Modules = [
+        { name: "Analyse 1", unite: "Fondamentale 1", coef: 4, credits: 6 },
+        { name: "Algébre 1", unite: "Fondamentale 1", coef: 3, credits: 5 },
+        {
+          name: "Algorithmique 1",
+          unite: "Fondamentale 2",
+          coef: 4,
+          credits: 6,
+          hasTP: true,
+        },
+        {
+          name: "Structure Machine 1",
+          unite: "Fondamentale 2",
+          coef: 3,
+          credits: 5,
+        },
+        {
+          name: "Terminologie Scientifique",
+          unite: "Méthodologie",
+          coef: 1,
+          credits: 2,
+          noTD: true,
+        },
+        {
+          name: "Langue étrangère",
+          unite: "Méthodologie",
+          coef: 1,
+          credits: 2,
+          noTD: true,
+        },
+        { name: "Physique 1", unite: "Découverte", coef: 2, credits: 4 },
+      ];
+
+      const semester2Modules = [
+        { name: "Analyse 2", unite: "Fondamentale 1", coef: 4, credits: 6 },
+        { name: "Algébre 2", unite: "Fondamentale 1", coef: 2, credits: 4 },
+        {
+          name: "Algorithmique 2",
+          unite: "Fondamentale 2",
+          coef: 4,
+          credits: 6,
+          hasTP: true,
+        },
+        {
+          name: "Structure Machine 2",
+          unite: "Fondamentale 2",
+          coef: 2,
+          credits: 4,
+        },
+        {
+          name: "Probabilités et statistiques",
+          unite: "Méthodologie",
+          coef: 2,
+          credits: 3,
+        },
+        {
+          name: "OPM",
+          unite: "Méthodologie",
+          coef: 1,
+          credits: 2,
+          hasTP: true,
+        },
+        { name: "TIC", unite: "Méthodologie", coef: 1, credits: 2, noTD: true },
+        { name: "Physique 2", unite: "Découverte", coef: 2, credits: 3 },
+      ];
+
+      // Fonction pour générer un tableau HTML pour chaque semestre
+      function genererTableau(modules, semesterTableId) {
+        const tbody = document.getElementById(semesterTableId);
+        const unites = [...new Set(modules.map((module) => module.unite))]; // Extraire les unités uniques
+
+        unites.forEach((unite) => {
+          // Ajouter une ligne pour l'unité
+          const rowUnite = document.createElement("tr");
+          rowUnite.className = "bg-info";
+          rowUnite.innerHTML = `
+                  <td colspan="4">${unite}</td>
+                  <td>-</td>
+                  <td>-</td>
+              `;
+          tbody.appendChild(rowUnite);
+
+          // Ajouter les modules de l'unité
+          modules
+            .filter((module) => module.unite === unite)
+            .forEach((module) => {
+              const rowModule = document.createElement("tr");
+              rowModule.innerHTML = `
+                          <td>${module.name}</td>
+                          <td>${module.coef}</td>
+                          <td>${module.credits}</td>
+                          <td class="input-group">
+                              ${
+                                module.noTD
+                                  ? ""
+                                  : '<input type="number" class="form-control td-note" placeholder="TD">'
+                              }
+                              ${
+                                module.hasTP
+                                  ? '<input type="number" class="form-control tp-note" placeholder="TP">'
+                                  : ""
+                              }
+                              <input type="number" class="form-control exam-note" placeholder="Exam">
+                          </td>
+                          <td class="module-moyenne">-</td>
+                          <td class="module-credits">-</td>
+                      `;
+              tbody.appendChild(rowModule);
+            });
+        });
+      }
+
+      // Fonction pour calculer la moyenne et attribuer les crédits pour chaque semestre
+      function calculerMoyenne() {
+        const semesters = ["semester-1", "semester-2"];
+
+        semesters.forEach((semesterId) => {
+          const modulesRows = document.querySelectorAll(
+            `#table-body-${semesterId} tr`
+          );
+
+          modulesRows.forEach((row) => {
+            const inputs = row.querySelectorAll("input");
+            const coef = parseFloat(row.cells[1]?.innerText) || 0;
+            const credits = parseFloat(row.cells[2]?.innerText) || 0;
+
+            if (inputs.length >= 1) {
+              let tdNote = parseFloat(inputs[0]?.value) || 0;
+              let tpNote = parseFloat(inputs[1]?.value) || 0;
+              let examNote = parseFloat(inputs[inputs.length - 1]?.value) || 0;
+
+              // Calculer la moyenne pondérée (ici en utilisant un coefficient arbitraire)
+              let moyenneModule = tdNote * 0.2 + tpNote * 0.3 + examNote * 0.5;
+              if (isNaN(moyenneModule)) moyenneModule = 0;
+
+              // Calculer les crédits attribués en fonction de la moyenne
+              let creditsAttribues = 0;
+              if (moyenneModule >= 10) {
+                creditsAttribues = credits;
+              }
+
+              const moyenneCell = row.querySelector(".module-moyenne");
+              const creditsCell = row.querySelector(".module-credits");
+
+              if (moyenneCell) moyenneCell.innerText = moyenneModule.toFixed(2);
+              if (creditsCell) creditsCell.innerText = creditsAttribues;
+            }
+          });
+        });
+      }
+
+      // Initialiser les tableaux pour les semestres
+      genererTableau(semester1Modules, "table-body-semester-1");
+      genererTableau(semester2Modules, "table-body-semester-2");
+
+      // Ajouter un événement pour recalculer la moyenne lors de la saisie des notes
+      document.body.addEventListener("input", calculerMoyenne);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
