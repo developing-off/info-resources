@@ -1,4 +1,8 @@
 <?php
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *'); // Permet toutes les origines, sinon spécifie une origine particulière
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE'); // Méthodes autorisées
+header('Access-Control-Allow-Headers: Content-Type'); // En-têtes autorisés
 // Décode la charge utile JSON
 $input = file_get_contents('php://input');
 $data = json_decode($input, true);
