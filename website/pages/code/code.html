@@ -144,16 +144,24 @@
           const codeList = document.getElementById('code-list');
     
           // Charger et afficher les extraits depuis codes.json
-          fetch('https://younes-sarni.alwaysdata.net/inforesources/server/codes.json',{
-            method: 'GET',
-           
-            mode: 'no-cors'
-          })
-            .then(response => response.json())
-            .then(data => {
-              data.forEach(item => addCodeAccordion(item.title, item.language, item.code));
-            })
-            .catch(err => console.error('Erreur de chargement des codes:', err));
+          fetch('https://younes-sarni.alwaysdata.net/inforesources/server/codes.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.text(); // Remplacez `json()` par `text()` pour voir le contenu brut
+  })
+  .then(text => {
+    try {
+      const data = JSON.parse(text); // Analyse manuellement le JSON
+      console.log(data);
+      data.forEach(item => addCodeAccordion(item.title, item.language, item.code));
+    } catch (err) {
+      console.error('Invalid JSON:', text, err); // Affiche le contenu brut en cas d'erreur
+    }
+  })
+  .catch(err => console.error('Erreur de chargement des codes:', err));
+
     
           // Fonction pour ajouter un extrait avec coloration syntaxique dans un accordion
           function addCodeAccordion(title, language, code) {
