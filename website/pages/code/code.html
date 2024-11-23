@@ -38,41 +38,56 @@
         overflow: auto;
       }
     </style>
- 
-   
-   <style>
-     .accordion {
-       border: 1px solid #ddd;
-       border-radius: 5px;
-       margin: 10px 0;
-     }
-   
-     .accordion-header {
-       background-color: #f7f7f7;
-       padding: 10px;
-       cursor: pointer;
-       font-weight: bold;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-     }
-   
-     .accordion-content {
-       display: none;
-       padding: 10px;
-       border-top: 1px solid #ddd;
-       background-color: #fff;
-     }
-   
-     .accordion.active .accordion-content {
-       display: block;
-     }
-   </style>
-   
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+      .accordion {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+
+      .accordion-header {
+        background-color: #f7f7f7;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .accordion-content {
+        display: none;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        background-color: #fff;
+      }
+
+      .accordion.active .accordion-content {
+        display: block;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+      integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+      integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <header>
@@ -122,7 +137,7 @@
           <button type="submit">Ajouter un extrait de code</button>
         </form>
         <div id="code-list">
-            <!-- La liste des extraits de code sera affichée ici -->
+          <!-- La liste des extraits de code sera affichée ici -->
         </div>
       </div>
     </section>
@@ -136,104 +151,121 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const codeForm = document.getElementById('code-form');
-          const titleInput = document.getElementById('title');
-          const languageSelect = document.getElementById('language');
-          const codeInput = document.getElementById('code');
-          const codeList = document.getElementById('code-list');
-    
-          // Charger et afficher les extraits depuis codes.json
-          fetch('https://younes-sarni.alwaysdata.net/inforesources/server/codes.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.text(); // Remplacez `json()` par `text()` pour voir le contenu brut
-  })
-  .then(text => {
-    try {
-      const data = JSON.parse(text); // Analyse manuellement le JSON
-      console.log(data);
-      data.forEach(item => addCodeAccordion(item.title, item.language, item.code));
-    } catch (err) {
-      console.error('Invalid JSON:', text, err); // Affiche le contenu brut en cas d'erreur
-    }
-  })
-  .catch(err => console.error('Erreur de chargement des codes:', err));
+      document.addEventListener("DOMContentLoaded", () => {
+        const codeForm = document.getElementById("code-form");
+        const titleInput = document.getElementById("title");
+        const languageSelect = document.getElementById("language");
+        const codeInput = document.getElementById("code");
+        const codeList = document.getElementById("code-list");
 
-    
-          // Fonction pour ajouter un extrait avec coloration syntaxique dans un accordion
-          function addCodeAccordion(title, language, code) {
-            const accordion = document.createElement('div');
-            accordion.classList.add('accordion');
-    
-            const header = document.createElement('div');
-            header.classList.add('accordion-header');
-            header.innerHTML = `${title} - <span>${language.replace('language-', '')}</span>`;
-            accordion.appendChild(header);
-    
-            const content = document.createElement('div');
-            content.classList.add('accordion-content');
-            content.innerHTML = `
+        // Charger et afficher les extraits depuis codes.json
+        fetch(
+          "https://younes-sarni.alwaysdata.net/inforesources/server/codes.json", {
+            mode: 'no-cors'
+          }
+        )
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text(); // Remplacez `json()` par `text()` pour voir le contenu brut
+          })
+          .then((text) => {
+            try {
+              const data = JSON.parse(text); // Analyse manuellement le JSON
+              console.log(data);
+              data.forEach((item) =>
+                addCodeAccordion(item.title, item.language, item.code)
+              );
+            } catch (err) {
+              console.error("Invalid JSON:", text, err); // Affiche le contenu brut en cas d'erreur
+            }
+          })
+          .catch((err) =>
+            console.error("Erreur de chargement des codes:", err)
+          );
+
+        // Fonction pour ajouter un extrait avec coloration syntaxique dans un accordion
+        function addCodeAccordion(title, language, code) {
+          const accordion = document.createElement("div");
+          accordion.classList.add("accordion");
+
+          const header = document.createElement("div");
+          header.classList.add("accordion-header");
+          header.innerHTML = `${title} - <span>${language.replace(
+            "language-",
+            ""
+          )}</span>`;
+          accordion.appendChild(header);
+
+          const content = document.createElement("div");
+          content.classList.add("accordion-content");
+          content.innerHTML = `
               <pre><code class="${language}">${escapeHtml(code)}</code></pre>
             `;
-            accordion.appendChild(content);
-    
-            codeList.appendChild(accordion);
-            Prism.highlightAll();
-    
-            header.addEventListener('click', () => {
-              accordion.classList.toggle('active');
-            });
-          }
-    
-          // Sauvegarde dans un fichier JSON
-          function saveToJSON(title, language, code) {
-            const data = { title, language, code };
-            fetch('https://younes-sarni.alwaysdata.net/inforesources/server/code-submit.php', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data)
-            })
-            .then(response => {
+          accordion.appendChild(content);
+
+          codeList.appendChild(accordion);
+          Prism.highlightAll();
+
+          header.addEventListener("click", () => {
+            accordion.classList.toggle("active");
+          });
+        }
+
+        // Sauvegarde dans un fichier JSON
+        function saveToJSON(title, language, code) {
+          const data = { title, language, code };
+          fetch(
+            "https://younes-sarni.alwaysdata.net/inforesources/server/code-submit.php",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            }
+          )
+            .then((response) => {
               if (response.ok) {
-                console.log('Code saved successfully.');
+                console.log("Code saved successfully.");
               } else {
-                console.error('Error saving code.');
+                console.error("Error saving code.");
               }
             })
-            .catch(error => console.error('Fetch error:', error));
-          }
-    
-          // Échapper les caractères spéciaux dans le code
-          function escapeHtml(str) {
-            return str.replace(/[&<>"']/g, match => {
-              const escapes = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
-              return escapes[match];
-            });
-          }
-    
-          // Gestion de la soumission du formulaire
-          codeForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const title = titleInput.value.trim();
-            const language = languageSelect.value;
-            const code = codeInput.value.trim();
-    
-            if (title && language && code) {
-              addCodeAccordion(title, language, code);
-              saveToJSON(title, language, code);
-              codeForm.reset();
-            } else {
-              alert("Veuillez remplir tous les champs !");
-            }
-          });
-        });
-      </script>
+            .catch((error) => console.error("Fetch error:", error));
+        }
 
-    
-        
+        // Échapper les caractères spéciaux dans le code
+        function escapeHtml(str) {
+          return str.replace(/[&<>"']/g, (match) => {
+            const escapes = {
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#039;",
+            };
+            return escapes[match];
+          });
+        }
+
+        // Gestion de la soumission du formulaire
+        codeForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const title = titleInput.value.trim();
+          const language = languageSelect.value;
+          const code = codeInput.value.trim();
+
+          if (title && language && code) {
+            addCodeAccordion(title, language, code);
+            saveToJSON(title, language, code);
+            codeForm.reset();
+          } else {
+            alert("Veuillez remplir tous les champs !");
+          }
+        });
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
