@@ -146,10 +146,7 @@
           // Charger et afficher les extraits depuis codes.json
           fetch('https://younes-sarni.alwaysdata.net/inforesources/server/codes.json',{
             method: 'GET',
-            headers: {
-              'Content-Type': 'application/json'
-            }
-            ,
+           
             mode: 'no-cors'
           })
             .then(response => response.json())
