@@ -160,26 +160,18 @@
 
         // Charger et afficher les extraits depuis codes.json
         fetch(
-          "https://younes-sarni.alwaysdata.net/inforesources/server/codes.json", {
-            mode: 'no-cors'
-          }
+          "https://younes-sarni.alwaysdata.net/inforesources/server/codes.json"
         )
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            return response.text(); // Remplacez `json()` par `text()` pour voir le contenu brut
+            return response.json();
           })
-          .then((text) => {
-            try {
-              const data = JSON.parse(text); // Analyse manuellement le JSON
-              console.log(data);
-              data.forEach((item) =>
-                addCodeAccordion(item.title, item.language, item.code)
-              );
-            } catch (err) {
-              console.error("Invalid JSON:", text, err); // Affiche le contenu brut en cas d'erreur
-            }
+          .then((data) => {
+            data.forEach((item) =>
+              addCodeAccordion(item.title, item.language, item.code)
+            );
           })
           .catch((err) =>
             console.error("Erreur de chargement des codes:", err)
@@ -201,8 +193,10 @@
           const content = document.createElement("div");
           content.classList.add("accordion-content");
           content.innerHTML = `
-              <pre><code class="${language}">${escapeHtml(code)}</code></pre>
-            `;
+                  <pre><code class="${language}">${escapeHtml(
+            code
+          )}</code></pre>
+                `;
           accordion.appendChild(content);
 
           codeList.appendChild(accordion);
@@ -215,15 +209,13 @@
 
         // Sauvegarde dans un fichier JSON
         function saveToJSON(title, language, code) {
-          const data = { title, language, code };
-          fetch(
-            "https://younes-sarni.alwaysdata.net/inforesources/server/code-submit.php",
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(data),
-            }
-          )
+          const url = new URL(
+            "https://younes-sarni.alwaysdata.net/inforesources/server/code-submit.php"
+          );
+          url.searchParams.append("title", title);
+          url.searchParams.append("language", language);
+          url.searchParams.append("code", code);
+          fetch(url)
             .then((response) => {
               if (response.ok) {
                 console.log("Code saved successfully.");
