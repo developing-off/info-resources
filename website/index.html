@@ -12,6 +12,18 @@
       property="og:image"
       content="https://th.bing.com/th/id/OIP.5CndTkd0-nqGwgaoMXgPxwHaCU?rs=1&pid=ImgDetMain"
     />
+    <style>
+      button {
+        background-color: #00aaff;
+        color: #fff;
+        padding: 12px 25px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -21,6 +33,7 @@
         <a href="index.html">Accueil</a>
         <a href="#programme">Programmes</a>
         <a href="pages/code/code.html">Bibliothèque</a>
+        <a href="https://moyenne-univ.vercel.app/">Moyenne</a>
         <a href="https://t.me/Developing_off">Contact</a>
       </nav>
     </header>
@@ -33,9 +46,13 @@
     <!-- Courses Section -->
     <section id="programme" class="programs">
       <h2>Programmes Universitaires</h2>
-      <div id="university-programs">
-       
-      </div>
+      <a href="https://moyenne-univ.vercel.app/">
+        <button>Calculer votre moyenne</button>
+      </a>
+      <br>
+      <div id="university-programs" style="
+      margin-top: 28px;
+  "></div>
     </section>
 
     <!-- Collaboration Section -->
@@ -87,9 +104,7 @@
         <div class="module-system-group">
           <div>
             <label for="Module">Module :</label>
-            <select id="Module" name="Module" required>
-             
-            </select>
+            <select id="Module" name="Module" required></select>
           </div>
           <div>
             <label for="Systeme">Système :</label>
@@ -129,7 +144,9 @@
     <!-- Footer -->
     <footer>
       <div class="footer-links">
-        <a href="https://github.com/developing-off/info-resources" target="_blank"
+        <a
+          href="https://github.com/developing-off/info-resources"
+          target="_blank"
           >Contribute on GitHub</a
         >
         <a href="https://t.me/Developing_off">Give us your feedback</a>
