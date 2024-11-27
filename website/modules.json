@@ -296,6 +296,27 @@
           ]
         }
       ]
-      }
+    },
+    {
+      "name": "UMBB",
+      "programs": [
+        {
+          "name": "Licence 1ère année informatique",
+          "semesters": [
+            {
+              "semester": "Semestre 1",
+              "modules": [
+               
+                {
+                  "name": "General Drive",
+                  "link": "https://drive.google.com/drive/u/0/folders/1NO307H9xBDTtJEdg6Vy_9zhL8wqemUSa",
+                  "status": "approved"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
